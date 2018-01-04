@@ -13,6 +13,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/:id' do
-    "Hello World"
+    erb :recipe
   end
 end
