@@ -1,5 +1,5 @@
-<p>Name: <%= binding.pry @recipe.ingredients %></p>
-<form action="/recipes/<%= @recipe.id %>" method="post">
+<p>Name: <%= @recipe.ingredients %></p>
+<form action="/recipes/<%= binding.pry @recipe.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <p><label for="name">Name: </label><input id="name" type="text" name="name" value="">
   <p><label for="ingredients">Ingredients: </label><input id="ingredients" type="text" name="ingredients" value="">
