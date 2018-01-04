@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
     erb :edit_recipe
   end
 
-  post '/recipes/:id' do
+  patch '/recipes/:id' do
     binding.pry
     recipe = Recipe.find(params[:id]).update({name: params[:name], ingredients: params[:ingredients], cook_time: params[:ingredients]})
     redirect "/recipes/#{recipe.id}"
