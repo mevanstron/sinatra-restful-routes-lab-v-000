@@ -1,1 +1,5 @@
-Hello World
+<% @recipe.all.each do |recipe| %>
+  <ul>
+  <li><%= recipe.name %></li>
+  </ul>
+<% end %>
