@@ -11,4 +11,8 @@ class ApplicationController < Sinatra::Base
     @recipes = Recipe.all
     erb :index
   end
+
+  get 'recipes/:id' do
+    erb :recipe
+  end
 end
